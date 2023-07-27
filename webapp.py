@@ -3,6 +3,7 @@ import openai
 from llama_index import SimpleDirectoryReader
 from llama_index.node_parser import SimpleNodeParser
 from llama_index import VectorStoreIndex
+import os
 
 # Set API Key
 openai.api_key = os.get_env('OPENAI_API_KEY')
