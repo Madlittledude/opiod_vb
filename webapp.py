@@ -5,8 +5,7 @@ from llama_index.node_parser import SimpleNodeParser
 from llama_index import VectorStoreIndex
 
 # Set API Key
-openai.api_key = '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'
-
+openai.api_key = os.get_env('OPENAI_API_KEY)
 
 def load_data_and_index():
     filename_fn = lambda filename: {'file_name': filename}
